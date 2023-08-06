@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Thank you for tell us how we helped you Today!!!</p>
+    <form id="survey-form">
+        <div class="data">
+            <div class="div-form">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" class="input-block" required placeholder="Enter your name">
+            </div>
+            <div class="div-form"> 
+                <label id="email-label">Email</label>
+                <input id="email" type="email" class="input-block" required placeholder="Enter your email">
+            </div>
+            <div class="div-form">
+                <label id="number-label">Number</label>
+                <input id="number" type="number" class="input-block" min="1000000000" max="9999999999" required placeholder="Enter your phone number">
+            </div>
+        </div>    
+        <div class="div-evaluation">
+            <p id="evaluation">Tell us how was our Service</p>
+            <select id="dropdown">
+                <option id="dropdown" value="Select">--Select an option--</option>
+                <option id="dropdown" value="Good">Good</option>
+                <option id="dropdown" value="Excelent">Excelent</option>
+                <option id="dropdown" value="Good">Good</option>
+                <option id="dropdown" value="Bad">Bad</option>
+                <option id="dropdown" value="VeryBad">Very Bad</option>
+            </select>
+        </div>
+        <div class="div-retorn">
+            <p id="retorn">Will you come back?</p>
+                <input id="radius" name="radio" type="radio" value="yes">
+                <label id="retorn-label">Yes</label>
+                <input id="radius" name="radio" type="radio" value="no">
+                <label id="retorn-label">No</label>
+        </div>
+        <div class="other-services">
+            <p id="services">Tell us what other services will you required</p>
+                <div class="input-services">
+                    <input id="check"  type="checkbox" value="Web Page development">
+                    <label id="services-label">Web Page development</label>
+                </div>
+                <div>
+                    <input id="check" type="checkbox" value="Microservices">
+                    <label id="services-label">Microservices</label>
+                </div>
+                <div>
+                    <input id="check" type="checkbox" value="Machine Learning in e-Commerce">
+                    <label id="services-label">Machine Learning in e-Commerce</e-Commerce></label>
+                </div>
+                <div>
+                    <input id="check" type="checkbox" value="AI Consulting">
+                    <label id="services-label">AI Consulting</label>
+                </div>
+        </div>
+        <textarea placeholder="Aditional Comments" id="textarea-space"></textarea>
+        <input type="submit" id="submit" type="button">
+    </form>  
+</body>
+</html>
